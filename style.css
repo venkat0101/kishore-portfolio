@@ -110,21 +110,27 @@ nav {
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
     list-style: none;
 }
 
+
 .nav-links a {
     text-decoration: none;
-    color: var(--text-secondary);
-    font-weight: 500;
-    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--text-primary);
+    border-radius: 50px;
     transition: var(--transition-smooth);
 }
 
 .nav-links a:hover {
-    color: var(--text-primary);
+    background: var(--text-primary);
+    color: #fff;
 }
+
 
 /* Hero Section */
 .hero {
@@ -183,21 +189,17 @@ nav {
 
 /* Sections */
 .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    position: relative;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
     display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: var(--text-primary);
-}
 
 /* Experience */
 .experience-grid {
@@ -207,17 +209,20 @@ nav {
 }
 
 .experience-item {
-    padding: 2.5rem;
+    padding: 3rem;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
+    border-radius: 40px;
     transition: var(--transition-smooth);
 }
 
 .experience-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
     background: #fff;
+    border-color: #000;
 }
+
 
 .exp-header {
     display: flex;
@@ -290,16 +295,20 @@ nav {
 }
 
 .skill-tag {
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.8rem;
     border: 1px solid var(--border-color);
+    border-radius: 50px;
     font-size: 0.9rem;
+    font-weight: 500;
     transition: var(--transition-smooth);
 }
 
 .skill-tag:hover {
     background: var(--text-primary);
-    color: var(--bg-primary);
+    color: #fff;
+    border-color: #000;
 }
+
 
 /* Footer */
 footer {
