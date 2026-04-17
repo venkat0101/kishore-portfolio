@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
     <header>
+
         <div class="container">
             <nav style="justify-content: flex-end;">
                 <ul class="nav-links">
@@ -28,17 +32,18 @@
         <section class="hero" id="home">
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-text reveal">
-                        <h1>Kishore Pai</h1>
-                        <p class="hero-subheadline">Technical Support Leader</p>
-                        <p>With over 20 years of experience building and managing high-performing technical support teams, I specialize in driving Customer Success through strategy and operational excellence.</p>
-                        <div class="hero-cta">
+                    <div class="hero-text">
+                        <h1 class="animate-in">Kishore Pai</h1>
+                        <p class="hero-subheadline animate-in delay-1">Technical Support Leader</p>
+                        <p class="animate-in delay-2">With over 20 years of experience building and managing high-performing technical support teams, I specialize in driving Customer Success through strategy and operational excellence.</p>
+                        <div class="hero-cta animate-in delay-3">
                             <a href="#contact" class="skill-tag">Get in Touch</a>
                         </div>
                     </div>
-                    <div class="hero-image-container reveal">
+                    <div class="hero-image-container animate-in delay-2">
                         <img src="profile.png" alt="Kishore Pai" class="hero-image" id="profile-pic">
                     </div>
+
                 </div>
             </div>
         </section>
@@ -61,6 +66,7 @@
             <h2 class="section-title">Experience</h2>
             <div class="experience-grid">
                 <div class="experience-item reveal">
+                    <img src="https://www.vectorlogo.zone/logos/opentext/opentext-ar21.svg" alt="OpenText Logo" class="company-logo">
                     <div class="exp-header">
                         <div>
                             <h3 class="exp-role">Manager, Technical Support</h3>
@@ -68,6 +74,7 @@
                         </div>
                         <span class="exp-date">Apr 2021 - Present</span>
                     </div>
+
                     <ul>
                         <li>Leading a high-performance team to deliver enterprise-grade technical support.</li>
                         <li>Driving operational excellence and customer satisfaction metrics.</li>
@@ -75,6 +82,7 @@
                 </div>
 
                 <div class="experience-item reveal">
+                    <img src="https://www.vectorlogo.zone/logos/implyio/implyio-ar21.svg" alt="Imply Logo" class="company-logo">
                     <div class="exp-header">
                         <div>
                             <h3 class="exp-role">Senior Manager, Technical Support</h3>
@@ -82,6 +90,7 @@
                         </div>
                         <span class="exp-date">Feb 2020 - Apr 2021</span>
                     </div>
+
                     <ul>
                         <li>Managed support operations for real-time analytics platform based on Apache Druid.</li>
                         <li>Built and scaled the support team during a period of rapid growth.</li>
@@ -89,6 +98,7 @@
                 </div>
 
                 <div class="experience-item reveal">
+                    <img src="https://www.vectorlogo.zone/logos/stibosystems/stibosystems-ar21.svg" alt="Stibo Systems Logo" class="company-logo">
                     <div class="exp-header">
                         <div>
                             <h3 class="exp-role">Senior Manager, Technical Support</h3>
@@ -96,6 +106,7 @@
                         </div>
                         <span class="exp-date">2016 - 2020</span>
                     </div>
+
                     <ul>
                         <li>Led global support teams for Master Data Management (MDM) solutions.</li>
                         <li>Implemented ITIL best practices and improved resolution times significantly.</li>
@@ -103,6 +114,7 @@
                 </div>
 
                 <div class="experience-item reveal">
+                    <img src="https://www.vectorlogo.zone/logos/microfocus/microfocus-ar21.svg" alt="Micro Focus Logo" class="company-logo">
                     <div class="exp-header">
                         <div>
                             <h3 class="exp-role">Technical Lead</h3>
@@ -110,6 +122,7 @@
                         </div>
                         <span class="exp-date">2006 - 2016</span>
                     </div>
+
                     <ul>
                         <li>Technical lead for Vertica and database technologies.</li>
                         <li>Mentored junior engineers and resolved complex architectural issues.</li>
@@ -173,10 +186,21 @@
             <h2 class="section-title">Contact</h2>
             <p>I am always open to discussing technical support leadership, customer success strategies, or potential collaborations.</p>
             <div class="contact-links">
-                <a href="https://www.linkedin.com/in/kishore-pai-02b83/" target="_blank">LinkedIn</a>
-                <a href="mailto:kishore.pai@example.com">Email</a>
-                <a href="#">Download Resume</a>
+                <a href="https://www.linkedin.com/in/kishore-pai-02b83/" target="_blank" class="social-btn btn-linkedin">
+                    <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="mailto:kishore.pai@example.com" class="social-btn btn-gmail">
+                    <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.634-1.634 1.634h-2.14V8.402L12 13.791 1.774 8.402v12.598h-2.14C-.132 21 0 20.266 0 19.366V5.457c0-1.03.83-1.86 1.86-1.86h.634l9.506 5.012 9.506-5.012h.634c1.03 0 1.86.83 1.86 1.86z"/></svg>
+                    Email
+                </a>
+                <a href="https://wa.me/911234567890" target="_blank" class="social-btn btn-whatsapp">
+                    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.78-.879-2.056-.979-.275-.1-.475-.15-.675.15-.199.299-.775.979-.95 1.174-.175.195-.349.219-.65.069-.301-.15-1.269-.468-2.417-1.492-.893-.796-1.495-1.78-1.671-2.079-.175-.3-.019-.462.131-.611.135-.134.301-.35.45-.524.149-.175.199-.299.299-.499.1-.2.05-.375-.025-.524-.075-.15-.675-1.625-.925-2.225-.244-.589-.491-.51-.675-.519-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.799.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.116 3.23 5.125 4.532.715.311 1.273.497 1.708.636.719.228 1.373.196 1.89.119.576-.086 1.78-.727 2.03-1.428.25-.7.25-1.3.175-1.428-.075-.128-.275-.203-.576-.353z"/></svg>
+                    WhatsApp
+                </a>
+                <a href="resume.pdf" download class="social-btn btn-resume">Download Resume</a>
             </div>
+
             <p style="margin-top: 4rem; font-size: 0.8rem; color: #999;">&copy; 2026 Kishore Pai. All rights reserved.</p>
         </div>
     </footer>

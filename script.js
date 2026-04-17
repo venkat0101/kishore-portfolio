@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Preloader handling
+    const preloader = document.getElementById('preloader');
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            preloader.classList.add('preloader-hidden');
+        }, 500); // Small delay for smoothness
+    });
+
     // Reveal animations on scroll
+
     const revealElements = document.querySelectorAll('.reveal');
     
     const revealOnScroll = () => {
