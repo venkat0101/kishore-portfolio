@@ -308,22 +308,26 @@ nav {
     border: 1px solid var(--border-color);
     font-size: 0.9rem;
     transition: var(--transition-smooth);
-    opacity: 0;
     background: #fff;
 }
 
+.reveal .skill-tag {
+    opacity: 0;
+    transform: translateY(30px) scale(0.8);
+}
+
 .skill-category.active .skill-tag {
-    animation: skillPop 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: skillPop 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes skillPop {
-    from {
+    0% {
         opacity: 0;
-        transform: scale(0.8) translateY(20px);
+        transform: translateY(40px) scale(0.7) rotate(-5deg);
     }
-    to {
+    100% {
         opacity: 1;
-        transform: scale(1) translateY(0);
+        transform: translateY(0) scale(1) rotate(0deg);
     }
 }
 
@@ -332,12 +336,17 @@ nav {
 .skill-tag:nth-child(3) { animation-delay: 0.3s; }
 .skill-tag:nth-child(4) { animation-delay: 0.4s; }
 .skill-tag:nth-child(5) { animation-delay: 0.5s; }
+.skill-tag:nth-child(6) { animation-delay: 0.6s; }
+.skill-tag:nth-child(7) { animation-delay: 0.7s; }
+.skill-tag:nth-child(8) { animation-delay: 0.8s; }
 
 .skill-tag:hover {
     background: var(--text-primary);
     color: var(--bg-primary);
-    transform: translateY(-3px) scale(1.05);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+
 
 
 /* Footer */
