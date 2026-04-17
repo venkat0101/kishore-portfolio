@@ -110,25 +110,29 @@ nav {
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     list-style: none;
+    align-items: center;
 }
 
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-primary);
-    font-weight: 600;
-    font-size: 0.9rem;
+    color: #fff;
+    background: #000;
     padding: 0.6rem 1.2rem;
-    border: 1px solid var(--text-primary);
     border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.85rem;
     transition: var(--transition-smooth);
+    border: 1px solid #000;
 }
 
 .nav-links a:hover {
-    background: var(--text-primary);
-    color: #fff;
+    background: #333;
+    border-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 
@@ -189,17 +193,21 @@ nav {
 
 /* Sections */
 .section-title {
-    font-size: 1.2rem;
-    margin-bottom: 4rem;
-    background: #000;
-    color: #fff;
-    padding: 0.8rem 2.5rem;
-    border-radius: 50px;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
     display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
 }
 
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--text-primary);
+}
 
 /* Experience */
 .experience-grid {
@@ -209,20 +217,17 @@ nav {
 }
 
 .experience-item {
-    padding: 3rem;
+    padding: 2.5rem;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 40px;
     transition: var(--transition-smooth);
 }
 
 .experience-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
     background: #fff;
-    border-color: #000;
 }
-
 
 .exp-header {
     display: flex;
@@ -295,20 +300,16 @@ nav {
 }
 
 .skill-tag {
-    padding: 0.8rem 1.8rem;
+    padding: 0.5rem 1rem;
     border: 1px solid var(--border-color);
-    border-radius: 50px;
     font-size: 0.9rem;
-    font-weight: 500;
     transition: var(--transition-smooth);
 }
 
 .skill-tag:hover {
     background: var(--text-primary);
-    color: #fff;
-    border-color: #000;
+    color: var(--bg-primary);
 }
-
 
 /* Footer */
 footer {
@@ -492,7 +493,10 @@ footer {
 
     .nav-links.active {
         display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
     }
+
 
     .mobile-menu-btn {
         display: block;
