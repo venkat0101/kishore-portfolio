@@ -502,5 +502,18 @@ footer {
         flex-direction: column;
         gap: 0.5rem;
     }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
 }
+
 
